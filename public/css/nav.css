@@ -1,0 +1,57 @@
+.nav {
+    height: 20vh;
+    width: 100%;
+    background-color: rgb(240, 240, 240);
+    opacity: .97;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 50;
+}
+
+.tier4box{
+    text-transform: uppercase;
+    height: 90px;
+    position: relative;
+    width: 150px;
+    padding-top: 10px;
+}
+
+.tier4{
+    font-weight: 300;
+    font-size: 40px;
+    text-align: center;
+    width: 270px;
+}
+
+
+.tier4 > span {
+    color: rgb(0, 140, 255);
+}
+
+.tss{
+   font-size: 10px;
+text-align: center;
+z-index: 5;
+ width: 270px;
+}
+.links{
+
+}
+
+.links > ul{
+    display: flex;
+    list-style: none;
+
+}
+
+.links > ul > a {
+    color: black;
+    text-transform: uppercase;
+    text-decoration: inherit;
+    margin: 0 20px;
+    font-size: 18px;
+    padding: 10px;
+}
