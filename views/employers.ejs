@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/jobseekers.css" />
+    <link rel="stylesheet" href="/css/employers.css" />
+  </head>
+  <body>
+    <%- include('./partials/nav.ejs'); %>
+    <div class="employers">
+      <h1 class="jobs">employers</h1>
+    </div>
+    <%- include('./partials/employers.ejs'); %>
+    <div class="doourthing">
+      <h1 class="we">
+        WE'LL DO OUR THING SO YOU CAN DO YOURS. LET US HELP YOU FIND THE RIGHT
+        PEOPLE.
+      </h1>
+      <p class="getin">Get in touch with us today!</p>
+      <button class="getstarted">get started</button>
+    </div>
+    <div class="keys">
+      <h1 class="our">our keys to success</h1>
+      <div class="filter"></div>
+      <div class="iconwrapper">
+        <div class="iconblock">
+          <i class="far fa-lightbulb"></i>
+          <h1 class="num">15</h1>
+          <p class="bottomtext">YEARS OF EXPERIENCE PER TEAM MEMBER</p>
+        </div>
+        <div class="iconblock">
+          <i class="fas fa-bullseye"></i>
+          <h1 class="num">25</h1>
+          <p class="bottomtext">
+            STEP PROPRIETARY HIRING PROCESS ENSURING WE ARE ACHIEVING THE RIGHT
+            CULTURAL AND TECHNICAL FIT FOR EACH JOB
+          </p>
+        </div>
+        <div class="iconblock">
+          <i class="fas fa-thumbs-up"></i>
+          <h1 class="num">92%</h1>
+          <p class="bottomtext">
+            PERCENT OF THE CANDIDATES WE PLACED WERE STILL WITH THEIR COMPANIES
+            AFTER TWO YEARS
+          </p>
+        </div>
+        <div class="iconblock">
+          <i class="fas fa-user-friends"></i>
+          <h1 class="num">90%</h1>
+          <p class="bottomtext">
+            PERCENT OF OUR NEW BUSINESS IN THE PAST YEAR WAS REFERRAL-BASED
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="successstories">
+      <h1 class="ss">success stories</h1>
+      <div class="line2"></div>
+    </div>
+    <%- include('./partials/slider2.ejs'); %> <%-
+    include('./partials/indexcontent2.ejs'); %> <%-
+    include('./partials/footer.ejs'); %>
+  </body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/employers.css" />
+    <link rel="stylesheet" href="/css/jobseekers.css" />
+    <link rel="stylesheet" href="/css/cybersecurity.css" />
+    <link rel="stylesheet" href="/css/hiringguide.css" />
+  </head>
+  <body>
+    <%- include('./partials/nav.ejs'); %>
+    <div class="hiring">
+      <h1 class="jobs">DOWNLOAD OUR HIRING GUIDE</h1>
+    </div>
+
+    <div class="wrapper">
+      <div class="left">
+        <h2 class="looking">LOOKING FOR TECHNOLOGY TALENT IN ATLANTA, GA?</h2>
+        <div class="line"></div>
+        <p class="resource">
+          We’re offering a great resource to help you make the best decisions
+          when it comes to hiring technology talent in the Atlanta, GA area. Our
+          Hiring Guide will provide you with City Data, Hiring Trends and Salary
+          Guidance. Put your best foot forward and download our Hiring Guide
+          today.
+        </p>
+      </div>
+      <form action="/views/hiringguide.ejs" method="post" class="right">
+        <div class="downloadtheguide">
+          <h2 class="d">download the hiring guide</h2>
+          <div class="line"></div>
+        </div>
+        <div class="formwrapper">
+          <div class="names">
+            <input
+              type="text"
+              class="name"
+              placeholder="first name"
+              name="firstname"
+            />
+            <input
+              type="text"
+              class="name"
+              placeholder="last name"
+              name="lastname"
+            />
+          </div>
+          <div class="accoladesof">
+            <div class="row1">
+              <input
+                type="text"
+                class="company"
+                placeholder="company"
+                name="company"
+              />
+              <input
+                type="text"
+                class="company"
+                placeholder="title"
+                name="title"
+              />
+            </div>
+            <div class="row2">
+              <input
+                type="email"
+                class="contact"
+                name="email"
+                id=""
+                placeholder="email"
+              />
+              <input
+                type="tel"
+                class="contact"
+                name="phone"
+                id=""
+                placeholder="phone"
+              />
+            </div>
+          </div>
+          <button type="submit">submit</button>
+        </div>
+      </form>
+    </div>
+
+    <%- include('./partials/footer.ejs'); %>
+  </body>
+</html>
